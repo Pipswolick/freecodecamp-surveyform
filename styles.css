@@ -1,8 +1,31 @@
 body {
     text-align: center;
+    background-image: url(teamwork.jpg);
+    background-color: rgba(136, 136, 206, 0.7);
+    font-family: sans-serif;
+    margin: 0;
+    color: white;
+}
+
+
+.survey {
+    width: 60%;
+    background-color: #1b1b32;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 label {
     display: block;
     margin: 0.5rem 0;
+}
+
+
+input,
+select {
+    width: 60%;
+}
+
+.inline {
+    width: unset;
 }
