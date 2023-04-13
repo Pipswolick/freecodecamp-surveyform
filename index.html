@@ -8,23 +8,23 @@
 </head>
 
 <body>
-    <h1>freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
-    <form method="post" action='https://register-demo.freecodecamp.org'>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
         <div class="survey">
             <fieldset>
-                <label for="Name"> Name</label>
-                <input id="Name" name="Name" type="text" placeholder="Enter your name" required />
-                <label for="Email"> Email</label>
-                <input id="Email" name="Email" type="text" placeholder="Enter your Email" required />
-                <label for="Age"> Age (optional)</label>
-                <input id="Age" name="Age" type="text" placeholder="Age" required />
+                <label id="name-label" for="name"> Name</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" required />
+                <label id="email-label" for="email"> Email</label>
+                <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+                <label id="number-label" for="number"> Age (optional)</label>
+                <input id="number" name="number" type="number" placeholder="Age" min="13" max="100" required />
             </fieldset>
         </div>
         <div class="survey">
             <fieldset>
-                <label for="Current role"> Which option best describes your current role?</label>
-                <select id="Current role" name="Current role">
+                <label for="dropdown"> Which option best describes your current role?</label>
+                <select id="dropdown" name="dropdown">
                     <option value=""> (select one)</option>
                     <option value="1">Student</option>
                     <option value="2">Full Time Job</option>
@@ -38,11 +38,11 @@
             <fieldset>
                 <label>Would you recommend freeCodeCamp to a friend?</label>
                 <label for="Definitely">
-                    <input id="Definitely" type="radio" name="refer" class="inline" />Definitely</label>
+                    <input id="Definitely" type="radio" value="refer" name="refer" class="inline" />Definitely</label>
                 <label for="Maybe">
-                    <input id="Maybe" type="radio" name="refer" class="inline" />Maybe</label>
+                    <input id="Maybe" type="radio" value="refer" name="refer" class="inline" />Maybe</label>
                 <label for="Not sure">
-                    <input id="Not sure" type="radio" name="refer" class="inline" />Not sure</label>
+                    <input id="Not sure" type="radio" value="refer" name="refer" class="inline" />Not sure</label>
                 <label for="feature">What is your favorite feature of freeCodeCamp?</label>
                 <select id="feature" name="feature">
                     <option value="">(select an option)</option>
@@ -56,34 +56,41 @@
         <div class="survey">
             <fieldset>
                 <label>What would you like to see improved?</label>
-                <label for="Front-end"> <input id="Front-end" type="checkbox" name="Front-end"
+                <label for="Front-end"> <input id="Front-end" type="checkbox" value="feedback" name="Front-end"
                         class="inline" />Front-end
                     Projects</label>
                 <label for="Back-end Projects">
-                    <input id="Back-end Projects" type="checkbox" name="Back-end" class="inline" />Back-end
+                    <input id="Back-end Projects" type="checkbox" value="feedback" name="Back-end"
+                        class="inline" />Back-end
                     Projects</label>
                 <label for="Data Visualization">
-                    <input id="Data Visualization" type="checkbox" name="Data Visualization" class="inline" />Data
+                    <input id="Data Visualization" type="checkbox" value="feedback" name="Data Visualization"
+                        class="inline" />Data
                     Visualization</label>
                 <label for="Challenges">
-                    <input id="Challenges" type="checkbox" name="Challenges" class="inline" />Challenges</label>
+                    <input id="Challenges" type="checkbox" value="feedback" name="Challenges"
+                        class="inline" />Challenges</label>
                 <label for="Open Source Community">
-                    <input id="Open Source Community" type="checkbox" name="Open Source Community" class="inline" />Open
+                    <input id="Open Source Community" type="checkbox" value="feedback" name="Open Source Community"
+                        class="inline" />Open
                     Source
                     Community</label>
                 <label for="Gitter help rooms">
-                    <input id="Gitter help rooms" type="checkbox" name="Gitter help rooms" class="inline" />Gitter help
+                    <input id="Gitter help rooms" type="checkbox" value="feedback" name="Gitter help rooms"
+                        class="inline" />Gitter help
                     rooms</label>
                 <label for="Videos">
-                    <input id="Videos" type="checkbox" name="Videos" class="inline" />Videos</label>
+                    <input id="Videos" type="checkbox" value="feedback" name="Videos" class="inline" />Videos</label>
                 <label for="City Meetups">
-                    <input id="City Meetups" type="checkbox" name="City Meetups" class="inline" />City Meetups</label>
+                    <input id="City Meetups" type="checkbox" value="feedback" name="City Meetups" class="inline" />City
+                    Meetups</label>
                 <label for="Wiki">
-                    <input id="Wiki" type="checkbox" name="Wiki" class="inline" />Wiki</label>
+                    <input id="Wiki" type="checkbox" value="feedback" name="Wiki" class="inline" />Wiki</label>
                 <label for="Forum">
-                    <input id="Forum" type="checkbox" name="Forum" class="inline" />Forum</label>
+                    <input id="Forum" type="checkbox" value="feedback" name="Forum" class="inline" />Forum</label>
                 <label for="Additional Courses">
-                    <input id="Additional Courses" type="checkbox" name="Additional Courses" class="inline" />Additional
+                    <input id="Additional Courses" type="checkbox" value="feedback" name="Additional Courses"
+                        class="inline" />Additional
                     Courses</label>
             </fieldset>
         </div>
@@ -94,7 +101,7 @@
                     placeholder="Enter your comment here..."></textarea>
             </fieldset>
         </div>
-        <input type="submit" value="Submit" />
+        <input id="submit" type="submit" value="Submit" />
     </form>
 </body>
 
