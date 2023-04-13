@@ -1,31 +1,53 @@
 body {
     text-align: center;
-    background-image: url(teamwork.jpg);
-    background-color: rgba(136, 136, 206, 0.7);
+    background:
+        linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url("./teamwork.jpg");
     font-family: sans-serif;
     margin: 0;
     color: white;
 }
 
-
-.survey {
+form {
+    border-radius: 20px;
+    overflow: hidden;
     width: 60%;
-    background-color: #1b1b32;
     margin-left: auto;
     margin-right: auto;
+    padding: 2.5em;
+    background-color: rgba(27, 27, 50, 0.8);
+}
+
+.survey {
+    width: 100%;
 }
 
 label {
     display: block;
     margin: 0.5rem 0;
+    text-align: left;
 }
 
-
 input,
-select {
-    width: 60%;
+select,
+textarea {
+    width: 100%;
+    outline: none;
+    min-height: 2em;
 }
 
 .inline {
     width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+fieldset {
+    border: none;
+}
+
+input,
+select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
